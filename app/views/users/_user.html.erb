@@ -1,0 +1,12 @@
+<tr>
+  <td><%= user.id%></td>
+  <td><%= user.forename%></td>
+  <td><%= link_to user.name, :controller => "users",
+  :action => "show", :id => user.id %></td>
+  <% if current_user.admin? %>
+  <td><%= link_to "edit", :controller => "users",
+  :action => "edit", :id => user.id %></td>
+  <td><%= link_to "delete", user, :method => :delete, :confirm => "You sure?",
+                                :title => "Delete #{user.name}" %></td>
+  <% end %>
+</tr>

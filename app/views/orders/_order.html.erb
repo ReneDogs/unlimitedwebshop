@@ -1,0 +1,7 @@
+  <tr>
+  <td><%= order.id %></td>
+  <td><%= order.user_id %></td>
+  <td>
+  <%= link_to order.orderdate.strftime('%d.%m.%Y'), :controller => "orders",
+  :action => "show", :id => order.id %></td>
+ </tr>

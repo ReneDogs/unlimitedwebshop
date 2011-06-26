@@ -1,0 +1,11 @@
+<footer>
+  <nav class="round">
+    <ul>
+      <% if signed_in! %>
+      <li><%= link_to "Sign up now!", signup2_path, :class => "signup_button round" %></li>
+      <% end %>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+      </ul>
+  </nav>
+</footer>

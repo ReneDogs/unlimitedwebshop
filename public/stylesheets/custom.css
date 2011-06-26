@@ -1,0 +1,197 @@
+.container {
+  width: 850px;
+}
+
+body {
+  background: #000;
+}
+
+header {
+  padding-top: 20px;
+}
+
+header img {
+  padding: 0px;
+  background: #ebad01;
+}
+
+section {
+  margin-top: 10px;
+  font-size: 120%;
+  padding: 20px;
+  background: #ebad01;
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+/* Navigation */
+
+nav {
+/* Home, Users, Profile, Settings links/rechts vom Sampleappbild*/
+  float: left;
+}
+
+nav {
+  margin-top: 10px;
+  float: inherit;
+  background-color: #ebad01;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sign up button */
+
+a.signup_button {
+  /*margin-left: auto;
+  margin-right: auto;
+  text-align: center;*/
+  display: block;
+  
+  width: 110px;
+  color: #000;
+  background: #ebad01;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    0px;
+  -webkit-border-radius: 0px;
+  border-radius:         0px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ebad01;
+}
+
+footer nav {
+  margin-top: 10px;
+  float: none;
+}
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ebad01;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #ebad01;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #000;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
+

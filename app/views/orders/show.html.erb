@@ -1,0 +1,39 @@
+<td><table>
+    <tr>
+    <th >order ID.</th>
+    <th >User</th>
+    <th >orderdate</th>
+    <tr>
+    <td ><%= @order.id %></td>
+    <td ><%= @order.user_id %></td>
+    <td ><%= @order.orderdate.strftime('%d.%m.%Y')  %></td>
+    </tr>    
+ </table></td>
+  <table>  
+    <tr>
+    <th>article id</th>
+    <th>amount</th>
+    <th>name</th>
+    <th>price</th>    
+    </tr>
+    
+    <tr>
+    <% @items.each do |item| %>
+    <td><%= item.article_id%></td>
+    <td><%= item.amount%></td>
+        <% @article = item.article_id  %>
+        
+       <%@articles = Article.includes(:items).where(:id =>@article )%>
+      
+      <% @articles.each do |article| %>
+      <td><%= article.name %></td>
+      <td><%= number_with_precision article.price, :precision=>2 ,:separator=>"," ,
+              :delimiter=>"."%>&#8364;</td>
+    </tr>   
+      <% end %>
+      <% end %>
+    <td  ><table  >
+   </table></td> 
+  </tr>
+   
+  </td></tr> </table>

@@ -1,0 +1,19 @@
+<% if signed_in? %>
+<% if current_user.admin? %>
+  <%= link_to "new article", :controller => "articles",
+  :action => "new" %>  
+<% end %>
+<% end %>
+<%= will_paginate %>
+<ul class="articles">
+ <table >
+    <tr>
+    <th>article ID.</th>
+    <th>name</th>
+    <th>price</th>
+    </tr> 
+  <%= render @articles %>
+   
+    </table>
+</ul>
+<%= will_paginate %>

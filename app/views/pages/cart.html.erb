@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title><%= @basetitle %>| <%= @title %></title>
+  </head>
+  <body>
+      <p>
+        <% @carts = nil%>
+       <% if @carts.nil?%>
+         empty cart
+         <% else %>
+        
+      <% @carts.each do |cart| %>
+    <td><%= cart.article_id%></td>
+    <td><%= cart.name%></td>
+    <td><%= cart.price%></td>
+    
+   <% end %>  
+    <% end %>
+    </p>
+  </body>
+</html>

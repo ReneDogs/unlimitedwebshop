@@ -1,0 +1,16 @@
+  <tr><td><%= article.id %></td>
+  <td><%= article.name %></td>
+   <td><%= number_with_precision article.price, :precision=>2 ,:separator=>"," ,:delimiter=>"."
+  %>&#8364;</td>
+   <td><%= button_to "in cart " %></td>   
+  <% if signed_in? %>
+  <% if current_user.admin? %>
+  <td><%= link_to "edit", :controller => "articles",
+  :action => "edit", :id => article.id %></td>
+  
+  <td> <%= link_to "delete", article, :method => :delete, :confirm => "You sure?",
+                                :title => "Delete #{article.name}" %></td>
+  
+<% end %>
+<% end %>
+ </tr>
